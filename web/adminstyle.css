@@ -1,0 +1,178 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2021, 5:48:56 PM
+    Author     : KOICA UR ADMIN
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-image: url("../images/background5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0px;
+}
+
+.addbook {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.addbook button {
+  color: white;
+  background-color: yellow;
+  transition: all 0.3s ease 0s;
+}
+
+.addbook button:hover {
+  color: black;
+  background-color: turquoise;
+}
+
+.addbook a {
+  text-decoration: none;
+  color: black;
+}
+li a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.logo3 {
+  cursor: pointer;
+  width: 75px;
+}
+
+.navbar-links {
+  /* flex: 1; */
+  list-style: none;
+}
+
+.navbar-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navbar-links li a {
+  transition: all 0.3s ease 0s;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* .navbar-links li a:hover {
+  color: white;
+  background-color: turquoise;
+}*/
+
+button {
+  color: white;
+  padding: 9px 25px;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: turquoise;
+  color: black;
+}
+
+/*The Table's CSS*/
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h3 {
+  font-family: "Monserrat", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.table-container {
+  position: relative;
+  width: 1041px;
+  left: 165px;
+  white-space: nowrap;
+  background-color: #03003b;
+
+  border-collapse: collapse;
+  /* text-align: center; */
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px 5px black;
+  margin-top: 30px;
+}
+.content-table {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 30px 0px;
+  font-size: 16px;
+  min-width: 400px;
+  font-weight: bolder;
+}
+
+.content-table thead tr {
+  color: black;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.content-table th {
+  background-color: white;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 30px;
+}
+
+.content-table tr td button {
+  color: white;
+  margin-top: 2px;
+  padding: 9px 10px;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 14px;
+}
+
+.content-table tr td button:hover {
+  background-color: turquoise;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #221e6f;
+}
+

@@ -1,0 +1,234 @@
+:root {
+  --red: #87c2fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: #f3f5f7;
+  width: 100%;
+  min-height: 100vh;
+  color: #1b1c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  min-height: 100vh;
+  padding-top: 9rem;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1.5rem 7%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  font-size: 2rem;
+  color: orangered;
+  text-decoration: none;
+}
+
+header .logo span {
+  color: var(--red);
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin-left: 2.5rem;
+}
+
+header .navbar ul li a {
+  color: var(--red);
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: orangered;
+  border-bottom: 0.2rem solid var(--red);
+  padding: 0.7rem 0;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3%;
+  margin: 5% 0;
+}
+
+.card {
+    overflow: hidden;
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card_body {
+  padding: 26px 20px 36px 20px;
+}
+.card_body img {
+  width: 1000px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.card_title {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  text-transform: capitalize;
+
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+.card_body p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  line-break: anywhere;
+}
+
+p.card_author {
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+p.card_author a {
+  color: #1b1c34;
+  font-style: italic;
+}
+
+p.card_author a:hover {
+  font-weight: bold;
+}
+
+a.read_more {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  letter-spacing: 1.1px;
+  background: #0f1616;
+  margin-top: 50px;
+  padding: 24px 0px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 70%;
+  transition: all 0.3s ease-in-out;
+}
+.add_article a.read_more:hover {
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.15);
+  background: #404040;
+}
+
+.link i {
+  padding-left: 7px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  background-color: black;
+}
+
+@media only screen and (max-width: 1441px) and (min-width: 1025px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .grid {
+    gap: 2%;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card_body {
+    padding: 15px;
+  }
+
+  .card_title {
+    font-size: 22px;
+    padding-bottom: 14px;
+  }
+
+  .card_body p {
+    font-size: 16px;
+  }
+
+  a.read_more {
+    padding: 19px 0;
+    width: 60%;
+    font-size: 11px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .card {
+    padding: 20px 10px;
+  }
+
+  .card_body {
+    padding: 7px;
+  }
+
+  .card_title {
+    font-size: 20px;
+    padding-bottom: 7px;
+  }
+
+  .card_body p {
+    font-size: 14px;
+  }
+
+  a.read_more {
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+}

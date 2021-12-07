@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2021, 5:53:25 PM
+    Author     : KOICA UR ADMIN
+*/
+:root {
+  --red: #87c2fa;
+}
+
+* {
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
+  text-transform: capitalize;
+}
+
+*::selection {
+  background: #336BFF;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+
+
+
+
+
+
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  z-index: 1000;
+  padding: 1.5rem 7%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  font-size: 2.5rem;
+  color: orangered;
+}
+
+header .logo span {
+  color: #336BFF;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin-left: 2.5rem;
+}
+
+header .navbar ul li a {
+  color: #336BFF;
+  font-size: 2rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: orangered;
+  border-bottom: 0.2rem solid #336BFF;
+  padding: 0.7rem 0;
+}
+
+#menu {
+  font-size: 3rem;
+  color: #999;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+

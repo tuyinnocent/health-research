@@ -1,0 +1,617 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2021, 5:53:25 PM
+    Author     : KOICA UR ADMIN
+*/
+:root {
+  --red: #87c2fa;
+}
+
+* {
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
+  text-transform: capitalize;
+}
+
+*::selection {
+  background: #336BFF;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0 7%;
+  padding-top: 9rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  border-radius: 5rem;
+  background: #336BFF;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  font-size: 1.7rem;
+}
+.content {
+  text-align: center;
+}
+
+.btn:hover {
+  background: none;
+  border: solid #336BFF;
+  color: orangered;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #336BFF;
+}
+
+.heading span {
+  color: #336BFF;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+  z-index: 1000;
+  padding: 1.5rem 7%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  font-size: 2.5rem;
+  color: orangered;
+}
+
+header .logo span {
+  color: #336BFF;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin-left: 2.5rem;
+}
+
+header .navbar ul li a {
+  color: #336BFF;
+  font-size: 2rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: orangered;
+  border-bottom: 0.2rem solid #336BFF;
+  padding: 0.7rem 0;
+}
+
+#menu {
+  font-size: 3rem;
+  color: #999;
+  cursor: pointer;
+  display: none;
+}
+/* ===========================Landing page starts=============== */
+.container_home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/medical-team-hospital-healthcare-staff-set-doctors-medicine-profession-occupation-cartoon-flat-vector-illustration-178312714.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+}
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col {
+  flex-basis: 50%;
+}
+.home_h1 {
+  color: #fff;
+  font-size: 60px;
+}
+.p_home {
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+}
+.card_home {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+.card1 {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.card2 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.card_home:hover {
+  transform: translateY(-10px);
+}
+h3 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+.p_home {
+  text-shadow: 0 0 15px #000;
+}
+/* =====================landing page ends================== */
+
+/* ===================== post section starts=============== */
+
+.post-section .post {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.post__container {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  box-shadow: 0 10px 15px rgba(181, 181, 181, 0.7);
+  background: #f0f0f0;
+}
+.product-img {
+  width: 30px;
+  height: 19px;
+  /* background: url(./images/m3.jpg) 0 -40px / cover no-repeat; */
+}
+.product-img img {
+  width: 100%;
+}
+.product-detail {
+  width: 300px;
+  height: 220px;
+  background: #21222d;
+  border-radius: 0 40% 0 0;
+  padding: 5rem;
+  font-family: "poppins", sans-serif;
+  color: #fff;
+}
+.product-detail span {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 300;
+}
+.product-detail p {
+  font-size: 1.1rem;
+  color: #5f5f6b;
+}
+
+.btn-post {
+  position: relative;
+  margin-top: 10px;
+  width: 70px;
+  border: none;
+  outline: none;
+  background: #35353f;
+  color: #fff;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-family: "poppins", sans-serif;
+}
+
+/* ===================== post section ends=============== */
+
+/* ====================About Us Starts ================ */
+
+.section {
+  background-color: rgb(228, 228, 228);
+}
+.about-container {
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  padding-top: 80px;
+  flex-wrap: wrap;
+}
+.content-section {
+  width: 50%;
+}
+.image-section {
+  width: 45%;
+}
+.image-section img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+}
+
+.content-section .about-content h3 {
+  margin-top: 20px;
+  color: orangered;
+  font-size: 21px;
+}
+.content-section .about-content p {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .about-container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+/* ======================About Us Ends================== */
+
+.prevent .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prevent .box-container .box {
+  flex: 1 1 25rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.prevent .box-container .box img {
+  height: 12rem;
+  padding: 1rem;
+}
+
+.prevent .box-container .box h3 {
+  color: #3399FF;
+  font-size: 2rem;
+}
+
+.prevent .box-container .box p {
+  color: #3399FF;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.prevent .box-container .box:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: #336BFF;
+  transform: scale(1.1, 1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.handwash .heading {
+  text-align: center;
+  padding: 1rem;
+}
+
+.handwash .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.heading {
+  text-align: center;
+}
+.handwash .box-container .box {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  margin-top: 3rem;
+  padding: 2rem 3.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.handwash .box-container .box img {
+  height: 17rem;
+  width: 17rem;
+}
+
+.handwash .box-container .box h3 {
+  font-size: 2rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.handwash .box-container .box span {
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  background: #336BFF;
+  border-radius: 5rem;
+}
+.doctor .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.doctor .box-container .box {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2, 0.3);
+  padding: 1rem;
+  margin: 1.5rem;
+  text-align: center;
+  background: lightgrey;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  width: 23rem;
+  height: 35rem;
+}
+
+.doctor .box-container .box img {
+  margin: 1rem;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  background: #3399FF;
+}
+
+.doctor .box-container .box span {
+  font-size: 1.5rem;
+  color: #3399FF;
+}
+
+.section-title {
+  margin-left: 150px;
+}
+/* ==================== Contact starts=============== */
+
+/* ====================Contact ends================= */
+
+.footer {
+  min-height: auto;
+  padding-top: 0;
+  background: rgb(146, 200, 245);
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+  flex: 1 1 25rem;
+  margin: 2rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #000;
+  padding-bottom: 2rem;
+  font-weight: normal;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #111;
+  padding: 1rem 0;
+}
+
+.footer .credit {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #000;
+
+  font-weight: normal;
+  font-size: 2rem;
+  border-top: 0.1rem solid #fff3;
+}
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 8rem;
+    left: -120%;
+    height: 100%;
+    width: 100%;
+    background: #eee;
+    border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem;
+  }
+
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+  }
+
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    padding: 1rem;
+    background: #336BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  header .navbar.nav-toggle {
+    left: 0;
+  }
+
+  .home .content {
+    text-align: center;
+  }
+
+  .prevent .row:last-child {
+    flex-flow: column-reverse;
+  }
+}
+
+/* ================== Meet the doctor section============ */
+.section-doctor {
+  padding: 10rem 0;
+  background-color: #fff;
+}
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.card {
+  width: 32rem;
+  background-color: #ebeef0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  /* margin-top: -11rem; */
+  z-index: 999;
+  border: 1rem solid #ebeef0;
+}
+.card h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 1.5rem 0;
+}
+.job-title {
+  color: #777;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.about {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  text-align: center;
+  color: #333;
+}
+.card .btn-card {
+  padding: 1rem 2.5rem;
+  background-color: #445ae3;
+  border-radius: 2rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  color: #ede;
+  font-size: 1.4rem;
+  transition: all 0.5s;
+}
+.card .btn-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+.card .btn-card :active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media screen and (min-width: 700px) {
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    margin: 2rem;
+  }
+}
+
+/* ============= Meet doctors ends========= */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    padding: 0 3%;
+    padding-top: 9rem;
+  }
+}
+

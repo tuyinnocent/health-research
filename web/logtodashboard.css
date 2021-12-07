@@ -1,0 +1,142 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2021, 5:54:41 PM
+    Author     : KOICA UR ADMIN
+*/
+:root {
+  --red: #87c2fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+  z-index: 1000;
+  padding: 1.5rem 7%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  font-size: 2rem;
+  color: orangered;
+  text-decoration: none;
+}
+
+header .logo span {
+  color: #336BFF;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin-left: 2.5rem;
+}
+
+header .navbar ul li a {
+  color: #336BFF;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: orangered;
+  border-bottom: 0.2rem solid #336BFF;
+  padding: 0.7rem 0;
+}
+.container-log {
+  position: relative;
+  top: 150px;
+  left: 35%;
+  width: 300px;
+  height: 400px;
+  background: #3641b7;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(179, 179, 179, 0.7);
+  z-index: 1;
+  overflow: hidden;
+}
+.box-log {
+  position: absolute;
+  width: 100%;
+}
+.upper {
+  top: 0;
+  height: 150px;
+  background-color: #3641b7;
+  color: #fff;
+  border-radius: 0 0 80px 0;
+}
+.upper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+}
+.upper h1 {
+  padding: 1rem 0 0 1.3rem;
+}
+.upper h6 {
+  padding: 0 1.4rem;
+}
+.lower {
+  bottom: 0;
+  height: 250px;
+  background: #fff;
+  border-radius: 80px 0 0 0;
+}
+form {
+  width: 100%;
+  height: 100%;
+  padding-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.input {
+  position: relative;
+}
+.input input {
+  width: 260px;
+  height: 45px;
+  outline: none;
+  padding: 0 0.7rem;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  transition: 0.2s;
+}
+.login-btn {
+  padding: 0.5rem;
+  background: #3641b7;
+  border-radius: 20px;
+  width: 60%;
+  color: #fff;
+  border: none;
+}
+.login-btn:hover {
+  background: #9ea6ff;
+  color: black;
+}
+

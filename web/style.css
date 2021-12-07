@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2021, 5:57:07 PM
+    Author     : KOICA UR ADMIN
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      url(./images/k9.jpg)
+    );
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 400px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 40px 30px;
+  }
+  .container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+  }
+  .container .login-email .input-group input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 15px;
+  }
+  .container .login-email .input-group input:focus,
+  .container .login-email .input-group input:valid {
+    border-color: #a29bfe;
+  }
+  .container .login-email .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 5% 2%;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  .container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+  }
+  .container .login-email .login-register-text {
+    margin-top: 10px;
+    text-align: center;
+    color: #111;
+    font-weight: 600;
+  }
+  .container .login-email .login-register-text a {
+    text-decoration: none;
+    color: #6c5ce7;
+  }
+  
+  @media (max-width: 430px) {
+    .conatiner {
+      width: 300px;
+    }
+  }
+  
